@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: codegen-sep26-2v
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: codegen-sep26-2v 
+  name: codegen-sep26-2v
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
